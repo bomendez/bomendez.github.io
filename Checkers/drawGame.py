@@ -1,6 +1,5 @@
 '''
 Bo Mendez
-CS 5001, Fall 2020
 
 This class is the driver of the game.
 '''

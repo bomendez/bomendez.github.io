@@ -1,6 +1,5 @@
 '''
 Bo Mendez
-CS 5001, Fall 2020
 
 This class is used by drawGame to maintain the state of the game.
 '''
