@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bo Mendez - About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(6,22,9,1) 48%, rgba(33,110,28,1) 100%);
+        }
+
+        .background {
+            position: absolute;
+            width: 800px;
+            background-size: 800px 100%;
+            background-color: rgb(11, 102, 5);
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .background {
+                position: absolute;
+                width: 600px;
+                background-size: 600px 90%;
+                background-repeat: no-repeat;
+                background-position: top center;
+
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .background {
+                position: absolute;
+                width: 500px;
+                background-size: 500px 100%;
+                background-repeat: no-repeat;
+                background-position: top center;
+
+            }
+        }
+
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: sticky;
+        }
+
+        .home_nav, .about_nav, .projects_nav, .skills_nav, .document {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10pt;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .document {
+            margin-top: 0;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+        .content_container {
+            display: grid;
+        }
+
+        .subsection {
+            display: grid;
+            padding: 10pt;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: auto;
+            align-items: start;
+        }
+
+        h1 {
+            margin-top: 10pt;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 0pt;
+            margin-bottom: 1pt;
+        }
+
+        .education_detail {
+            font-size: 10pt;
+            margin-left: 3%;
+        }
+
+        .non_bullet {
+            margin-left: 5%;
+        }
+
+        .bullet_header {
+            margin-top: 10%;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: grey;
+            font-size: 8pt;
+        }
+
+        .arrow_container {
+            size: 100px 100px;
+            border: solid white 5pt;
+        }
+
+        #RiseUp {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #Current {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body class="container">
+    <div class="arrow_container">
+        <i class="arrow left"></i>
+    </div>
+    <div class="background">
+        <div class="navbar">
+            <a class="home_nav" href="/">Home</a>
+            <a id="Current" class="about_nav" href="/about">About Me</a>
+            <a class="projects_nav" href="/projects">Projects</a>
+            <a class="skills_nav" href="/contact">Contact</a>
+        </div>
+        <div class="document">
+            <h1>About Me</h1>
+            <div class="content_container">
+                <div class="subsection">
+                    <h3>Education</h3>
+                    <div class="right_col non_bullet">
+                        <h3>Northeastern University</h3>
+                        <p class="education_detail">Masters of Science in Computer Science</p>
+                        <p class="education_detail">Aug 2020 - December 2022</p>
+                        <br>
+                        <h3>Central Washington University</h3>
+                        <p class="education_detail">Bachelor of Music in Edcuation</p>
+                        <p class="education_detail">Aug 2009 - May 2014</p>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <h3 class="bullet_header">CS Courses Taken</h3>
+                    <div class="right_col">
+                        <ul>
+                            <li>Web Design</li>
+                            <li>Database Managment</li>
+                            <li>Foundations of SWE (AGILE and Lifecycles)</li>
+                            <li>Algorithms</li>
+                            <li>Computer Systems</li>
+                            <li>Object-Oriented Design</li>
+                            <li>Discrete Structures</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <h3 class="bullet_header">Databases</h3>
+                    <div class="right_col">
+                        <ul>
+                            <li>SQLite</li>
+                            <li>Postgres</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <h3 class="bullet_header">Languages and Frameworks</h3>
+                    <div class="right_col">
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>Javascript</li>
+                            <li>SQL</li>
+                            <li>Springboot</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <h3>Fun Facts</h3>
+                    <div class="right_col non_bullet">
+                        <p>I perform with a group called Rise Up - The Hamilton Tribute Band. Find out more on our <a id="RiseUp" href="https://www.youtube.com/channel/UCm35y16weidFp94WlDoRInQ">YouTube channel</a>.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="arrow_container">
+        <i class="arrow right"></i>
+    </div>
+</body>
+</html>
