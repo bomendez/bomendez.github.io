@@ -13,8 +13,8 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            background: rgb(2,0,36);
-            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(6,22,9,1) 48%, rgba(33,110,28,1) 100%);
+            background: rgb(0,126,22);
+            background: radial-gradient(circle, rgba(0,126,22,1) 0%, rgba(22,62,29,1) 51%, rgba(33,110,28,1) 100%);
         }
 
         .background {
@@ -33,18 +33,17 @@
                 background-size: 600px 90%;
                 background-repeat: no-repeat;
                 background-position: top center;
-
             }
         }
 
         @media only screen and (max-width: 600px) {
             .background {
                 position: absolute;
-                width: 500px;
+                width: 100%;
                 background-size: 500px 100%;
                 background-repeat: no-repeat;
                 background-position: top center;
-
+                font-size: 60%;
             }
         }
 
@@ -61,6 +60,10 @@
             margin-top: 10pt;
         }
 
+        a {
+            transition: color 1s ease-in;
+        }
+
         a:link {
             text-decoration: none;
             margin-bottom: 10pt;
@@ -72,6 +75,7 @@
 
         a:hover {
             text-decoration: underline;
+            color: rgb(203, 230, 197);
         }
 
         .document {
@@ -102,11 +106,6 @@
             margin-bottom: 1pt;
         }
 
-        .arrow_container {
-            size: 100px 100px;
-            border: solid white 5pt;
-        }
-
         #Email {
             color: white;
         }
@@ -118,9 +117,6 @@
     </style>
 </head>
 <body class="container">
-    <div class="arrow_container">
-        <i class="arrow left"></i>
-    </div>
     <div class="background">
         <div class="navbar">
             <a class="home_nav" href="/">Home</a>
@@ -137,9 +133,6 @@
             </div>
             
         </div>
-    </div>
-    <div class="arrow_container">
-        <i class="arrow right"></i>
     </div>
 </body>
 </html>

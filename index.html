@@ -34,20 +34,31 @@
                 background-image: url("/images/mendez.jpg");
                 background-size: 600px 95%;
                 background-repeat: no-repeat;
-                background-position: top center;
+                background-position: top center; 
+            }
 
+            .subtitle {
+                font-style: italic;
+                color: grey;
+                font-size: 8pt;
             }
         }
 
         @media only screen and (max-width: 600px) {
             .background {
                 position: absolute;
-                width: 500px;
+                width: 100%;
                 background-image: url("/images/mendez.jpg");
-                background-size: 500px 100%;
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position: top center;
+                font-size: 60%;
+            }
 
+            .subtitle {
+                font-style: italic;
+                color: grey;
+                font-size: 6pt;
             }
         }
 
@@ -64,6 +75,10 @@
             margin-top: 10pt;
         }
 
+        a {
+            transition: color 1s ease-in;
+        }
+
         a:link {
             text-decoration: none;
         }
@@ -74,6 +89,7 @@
 
         a:hover {
             text-decoration: underline;
+            color: rgb(203, 230, 197);
         }
 
         .title {
@@ -96,17 +112,6 @@
             margin-bottom: 2pt;
         }
 
-        .subtitle {
-            font-style: italic;
-            color: grey;
-            font-size: 8pt;
-        }
-
-        .arrow_container {
-            size: 100px 100px;
-            border: solid white 5pt;
-        }
-
         #Current {
             text-decoration: underline;
         }
@@ -114,9 +119,6 @@
     </style>
 </head>
 <body class="container">
-    <div class="arrow_container">
-        <i class="arrow left"></i>
-    </div>
     <div class="background">
         <div class="navbar">
             <a id="Current" class="home_nav" href="/">Home</a>
@@ -129,9 +131,6 @@
             <p>Software Engineer Graduate Student</p>
             <p class="subtitle">This site was made entirely through CSS and HTML!</p>
         </div>
-    </div>
-    <div class="arrow_container">
-        <i class="arrow right"></i>
     </div>
 </body>
 </html>
